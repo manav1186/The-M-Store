@@ -1,0 +1,464 @@
+<html>
+<head>
+<title>
+PRODUCTS | The M Store
+</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Cormorant SC', serif;
+	font-family: 'Poppins', sans-serif;
+	}
+
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 0px
+	}
+nav{
+	flex: 1;
+	text-align: right;
+	}
+
+nav ul{
+	display:inline-block;
+	list-style-type: none;
+	}
+
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+	}
+a{
+	text-decoration: none;
+	color: #555;
+	}
+p{
+	color: #555;
+	}	
+.container{
+	max-width: 1350px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+	}
+	
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	}
+.col-2{
+	flex-basis: 45%;
+	min-width: 300px;
+	}
+.col-2 img{
+	max-width:100%;
+	padding: 10px 0;
+	}
+.col-2 h1{
+	font-size: 50px;
+	line-height: 50px;
+	margin: 50px 0;
+	}
+.btn{
+	display: inline-block;
+	background: #ff523b;
+	color: #fff;
+	padding: 8px 30px;
+	margin: 30px 0;
+	border-radius: 30px;
+	transition: background 0.5s;
+	}
+	
+.btn:hover{
+	background: #563434;
+	}
+.header{
+	background: radial-gradient(#6495ED,#dfa5df);
+	}
+.header .row{
+	margin-top: 70px;
+	}
+.categories{
+	margin: 70px 0;
+	}
+.col-3{
+	flex-basis: 30%;
+	min-width: 250px;
+	margin-bottom: 30px;
+	}
+.col-3 img{
+	width: 100%;
+	}
+.small-container{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+	}
+.col-4{
+	flex-basis: 25%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+	}
+.col-4 img{
+	width: 100%;
+	}	
+.title{
+	text-align: center;
+	margin: 0 auto 80px;
+	position: relative;
+	line-height: 60px;
+	color: #555;
+	}
+.title::after{
+	content: ' ';
+	background: #ff523b;
+	width: 80px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	}
+h4{
+	color: #555;
+	font-weight: normal;
+	}
+.col-4 p{
+	font-size: 14px
+	}
+.rating .fa{
+	color: #ff523b;
+	} 
+.col-4:hover{
+	transform: translateY(-5px);
+	}
+.offer{
+	background: radial-gradient(#6495ED,#dfa5df);
+	margin-top: 80px;
+	padding:  30px 0
+	}
+.col-2 .offer-img{
+	padding: 50px;
+	}
+small{
+	color: #555;
+	}
+	
+.brands{
+	margin: 100px auto;
+	}
+.col-5{
+width:160px;
+}
+.col-5 img{
+	width: 100%;
+	cursor: pointer;
+	filter: grayscale(100%);
+	}
+.col-5 img:hover{
+	filter: grayscale(0);
+	}
+
+.footer{
+	background: #000;
+	color: #1b285e;
+	font-size: 14px;
+	padding: 60px 0 20px;
+	}
+.footer p{
+	color: #8a8a8a;
+	}
+.footer h3{
+	color: #fff;
+	margin-bottom: 20px;
+	}
+.menu-icon{
+	width:28px;
+	margin-right: 10px;
+	}
+.row-2{
+	justify-content: space-between;
+	margin: 100px auto 50px;
+	}
+select{
+	border: 1px solid #ff523b;
+	padding: 5px;
+	}
+select:focus{
+	outline: none;
+	}
+.page-btn{
+	margin: 0 auto 80px;
+	}
+	
+.page-btn span{
+	display: inline-block;
+	border: 1px solid #ff523b;
+	margin-left: 10px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+	}
+
+.page-btn span:hover{
+	background: #ff523b;
+	color: #fff;
+	}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="container">
+	<div class="navbar">
+	<div class="logo"> 
+	<a href="index.html"><img src="logonew.png" height="150px"width="300px"></a>
+	</div>
+	
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="accounts.html">Account</a></li>
+			<li><a href="feedback.html">Feedback</a></li>
+		</ul>
+	</nav>
+	<a href="cartpage.html"><img src="cart.png" width="30px" height="30px"></a>
+	<img src="menu.png" width="200px" height="30px" class="menu-icon">
+</div>
+</div>
+</div>
+
+	<div class="small-container">
+		
+		<div class="row row-2">
+			<h2>All Products</h2>
+			<select>
+				<option>Default Sorting</option>
+				<option>Sort by Price</option>
+				<option>Sort by Rating</option>
+				<option>Sort by Trend</option>
+				<option>Sort by Sale</option>
+			</select>
+		</div>
+		
+		<div class="row">
+			<div class="col-4">
+			<img src="macbook.jpg">
+			<h4>2022 Apple MacBook Air Laptop with M2 chip</h4>
+			<div class="rating">
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$9999.00</p>
+			</div>
+			<div class="col-4">
+			<img src="printer.png">
+			<br><br>
+			
+			<h4>HP Smart Tank 670 All-in-One</h4>
+			<div class="rating">
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$8999.00</p>
+			</div>
+			<div class="col-4">
+			<img src="boat.png" height="220px" width "140px">
+			<br><br>
+			<h4>boAt Immortal 700</h4>
+			<div class="rating">
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star-half-o" ></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$11999.00</p>
+			</div>
+			<div class="col-4">
+			<img src="s22.jpg" height="250px" width "900px">
+			<br>
+			<br>
+			<h4>Samsung Galaxy S22 Ultra 5G</h4>
+			<div class="rating">
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star-o" ></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$499.00</p>
+			</div>	
+		</div>
+		
+		<div class="row">
+			<div class="col-4">
+			<img src="iphone13pro.jpg">
+			<h4>Iphone 13Pro Max</h4>
+			<div class="rating">
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$9999.00</p>
+			</div>
+			<div class="col-4">
+			<img src="asuslappy.jpg">
+			<br><br>
+			
+			<h4>Asus ROG Strix G731GT</h4>
+			<div class="rating">
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$8999.00</p>
+			</div>
+			<div class="col-4">
+			<img src="nikoncamera.jpg" height="190px" width "100px">
+			<br><br>
+			<h4>Nikon Z5 Mirrorless DSLR Camera</h4>
+			<div class="rating">
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star-half-o" ></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$11999.00</p>
+			</div>
+			<div class="col-4">
+			<img src="miled.jpg" height="150px" width "900px">
+			<br>
+			<br>
+			<h4>MI LED TV 4A PRO(43)</h4>
+			<div class="rating">
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star-o" ></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$499.00</p>
+			</div>	
+		</div>
+		
+		<div class="row">
+			<div class="col-4">
+			<img src="drive.jpg">
+			<h4>SanDisk Ultra 32GB Pendrive</h4>
+			<div class="rating">
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$9999.00</p>
+			</div>
+			<div class="col-4">
+			<img src="watch.png">
+			<br><br>
+			
+			<h4>Noise ColorFit Caliber Smartwatch</h4>
+			<div class="rating">
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$8999.00</p>
+			</div>
+			<div class="col-4">
+			<img src="mibox.png" height="190px" width "100px">
+			<br><br>
+			<h4>Mi Box 4k Media Streaming Device</h4>
+			<div class="rating">
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star-half-o" ></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$11999.00</p>
+			</div>
+			<div class="col-4">
+			<img src="asusphone.png" height="500px" width "100px">
+			<br>
+			<br>
+			<h4>ASUS ROG Phone 3</h4>
+			<div class="rating">
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star-o" ></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$499.00</p>
+			</div>	
+		</div>
+		
+		<div class="page-btn">
+		
+		<span>1</span>
+		<span>2</span>
+		<span>3</span>
+		<span>4</span>
+		<span>&#8594;</span>
+		
+		</div>
+		
+	</div>
+<!--footer--->
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+			<h3>Download Our App</h3>
+			<p>Download app for Android and Ios</p>
+			</div>
+			<div class="footer-col-2">
+				<img src="logonew.png">
+				<p>Our Purpose is to sustainably make the pleasure and benefits of the Technology to the Many.</p>
+			</div>
+			<div class="footer-col-3">
+			<h3>Connect With Us</h3>
+			<ul>
+				<li>Facebook</li>
+				<li>Instagram</li>
+				<li>Twitter</li>
+				<li>YouTube</li>
+			</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</body>

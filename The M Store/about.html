@@ -1,0 +1,284 @@
+<html>
+<head>
+<title>
+ABOUT US | The M Store
+</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Cormorant SC', serif;
+	font-family: 'Poppins', sans-serif;
+	}
+
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 0px
+	}
+nav{
+	flex: 1;
+	text-align: right;
+	}
+
+nav ul{
+	display:inline-block;
+	list-style-type: none;
+	}
+
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+	}
+a{
+	text-decoration: none;
+	color: #555;
+	}
+p{
+	color: #555;
+	}	
+.container{
+	max-width: 1350px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+	}
+	
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	}
+.col-2{
+	flex-basis: 45%;
+	min-width: 300px;
+	}
+.col-2 img{
+	max-width:100%;
+	padding: 10px 0;
+	}
+.col-2 h1{
+	font-size: 50px;
+	line-height: 50px;
+	margin: 50px 0;
+	}
+.btn{
+	display: inline-block;
+	background: #ff523b;
+	color: #fff;
+	padding: 8px 30px;
+	margin: 30px 0;
+	border-radius: 30px;
+	transition: background 0.5s;
+	}
+	
+.btn:hover{
+	background: #563434;
+	}
+.header{
+	background: radial-gradient(#6495ED,#dfa5df);
+	}
+.header .row{
+	margin-top: 70px;
+	}
+.categories{
+	margin: 70px 0;
+	}
+.col-3{
+	flex-basis: 30%;
+	min-width: 250px;
+	margin-bottom: 30px;
+	}
+.col-3 img{
+	width: 100%;
+	}
+.small-container{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+	}
+.col-4{
+	flex-basis: 25%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+	}
+.col-4 img{
+	width: 100%;
+	}	
+.title{
+	text-align: center;
+	margin: 0 auto 80px;
+	position: relative;
+	line-height: 60px;
+	color: #555;
+	}
+.about{
+	text-align: center;
+	margin: 0 auto 80px;
+	position: relative;
+	line-height: 60px;
+	color: #555;
+	}
+.title::after{
+	content: ' ';
+	background: #ff523b;
+	width: 80px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	}
+h4{
+	color: #555;
+	font-weight: normal;
+	}
+.col-4 p{
+	font-size: 14px
+	}
+.rating .fa{
+	color: #ff523b;
+	} 
+.col-4:hover{
+	transform: translateY(-5px);
+	}
+.offer{
+	background: radial-gradient(#6495ED,#dfa5df);
+	margin-top: 80px;
+	padding:  30px 0
+	}
+.col-2 .offer-img{
+	padding: 50px;
+	}
+small{
+	color: #555;
+	}
+	
+.brands{
+	margin: 100px auto;
+	}
+.col-5{
+width:160px;
+}
+.col-5 img{
+	width: 100%;
+	cursor: pointer;
+	filter: grayscale(100%);
+	}
+.col-5 img:hover{
+	filter: grayscale(0);
+	}
+
+.footer{
+	background: #000;
+	color: #1b285e;
+	font-size: 14px;
+	padding: 60px 0 20px;
+	}
+.footer p{
+	color: #8a8a8a;
+	}
+.footer h3{
+	color: #fff;
+	margin-bottom: 20px;
+	}
+.menu-icon{
+	width:28px;
+	margin-right: 10px;
+	}
+.row-2{
+	justify-content: space-between;
+	margin: 100px auto 50px;
+	}
+select{
+	border: 1px solid #ff523b;
+	padding: 5px;
+	}
+select:focus{
+	outline: none;
+	}
+.page-btn{
+	margin: 0 auto 80px;
+	}
+	
+.page-btn span{
+	display: inline-block;
+	border: 1px solid #ff523b;
+	margin-left: 10px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+	}
+
+.page-btn span:hover{
+	background: #ff523b;
+	color: #fff;
+	}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="container">
+	<div class="navbar">
+	<div class="logo"> 
+	<a href="index.html"><img src="logonew.png" height="150px"width="300px"></a>
+	</div>
+	
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="accounts.html">Account</a></li>
+			<li><a href="feedback.html">Feedback</a></li>
+		</ul>
+	</nav>
+	<a href="cartpage.html"><img src="cart.png" width="30px" height="30px"></a>
+	<img src="menu.png" width="200px" height="30px" class="menu-icon">
+</div>
+</div>
+</div>
+<!----About us--->
+<h2 class="title">About Us</h2>
+ <h3 class="about">Welcome to The M Store.....!
+ One of the best platforms for purchasing electronic items at great discounted offers and least Hassle. We provide a huge range of variety and stock, So as the customer gets everything what it takes. We deal in Mobile phones, Laptops, Cameras, Headphones and many more other Electronic apparels also. We have very categorised and simple UI of the website so that the consumer may not face any type of problem. Soon we will also launch the official app, Till then Stay tuned.</h3>
+ <h3 class="about">Whatever you’ve got in mind, we’ve got inside<br>Happy Shopping !</h3>
+
+<!--footer--->
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+			<h3>Download Our App</h3>
+			<p>Download app for Android and Ios</p>
+			</div>
+			<div class="footer-col-2">
+				<img src="logonew.png">
+				<p>Our Purpose is to sustainably make the pleasure and benefits of the Technology to the Many.</p>
+			</div>
+			<div class="footer-col-3">
+			<h3>Connect With Us</h3>
+			<ul>
+				<li>Facebook</li>
+				<li>Instagram</li>
+				<li>Twitter</li>
+				<li>YouTube</li>
+			</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
